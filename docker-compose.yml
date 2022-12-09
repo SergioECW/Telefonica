@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apigateway_soluciones_agiles:
+    image: ${DOCKER_REGISTRY-}apigatewaysolucionesagiles
+    build:
+      context: .
+      dockerfile: APIGateway_Soluciones_Agiles/Dockerfile
